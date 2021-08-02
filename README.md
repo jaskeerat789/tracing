@@ -1,5 +1,5 @@
 # Into to distributed tracing
-Distributed tracing, also called distributed request tracing, is a method used to profile and monitor applications, especially those built using a microservices architecture. Distributed tracing helps pinpoint where failures occur and what causes poor performance. We use [opentelemetry standards](https://opentelemetry.io/) and [Jaeger UI](https://www.jaegertracing.io/) in this setup.
+Distributed tracing, also called distributed request tracing, is a method used to profile and monitor applications, especially those built using a microservices architecture. Distributed tracing helps pinpoint where failures occur and what causes poor performance. We have used [opentelemetry standards](https://opentelemetry.io/) and [Jaeger UI](https://www.jaegertracing.io/) in this setup.
 
 ## Architecture
 
