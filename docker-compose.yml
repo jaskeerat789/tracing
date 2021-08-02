@@ -27,7 +27,7 @@ services:
     container_name: playlists-db
     image: redis:6.0-alpine
     command: [ "redis-server"]
-    port:
+    ports:
       - 6379:6379
     networks:
     - tracing
@@ -51,7 +51,7 @@ services:
     container_name: videos-db
     image: redis:6.0-alpine
     command: [ "redis-server"]
-    port:
+    ports:
       - 6380:6379
     networks:
     - tracing
