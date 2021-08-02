@@ -75,7 +75,7 @@ func main() {
 		}
 
 		cors(rw)
-		fmt.Fprint(rw, "%s", video)
+		fmt.Fprint(rw, video)
 
 	})
 
@@ -94,6 +94,7 @@ func getVideo(wr http.ResponseWriter, r *http.Request, p httprouter.Params, ctx 
 	span, _ := opentracing.StartSpanFromContext(ctx, "video-api: redis=get")
 	defer span.Finish()
 	id := p.ByName("id")
+	println(id)
 
 	videoData, err := rdb.Get(ctx, id).Result()
 	if err == redis.Nil {
